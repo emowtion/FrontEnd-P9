@@ -1,5 +1,5 @@
 const options = {
-    strings: [" ",  'I\'m Emowtion A FrontEnd Developer :)'],
+    strings: [" ", 'I\'m Emowtion, A FrontEnd Developer :)'],
     typeSpeed: 45,
     loop: true,
     fadeOut: true

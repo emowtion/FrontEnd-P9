@@ -2,13 +2,14 @@ body {
   background: #1f2934;
   color: #fff;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
   text-align: center;
 }
 
-/* Jumbotron 1 */
+/* Jumbotron home */
 
 .circle {
   display: inline-block;
@@ -45,6 +46,12 @@ h1 {
 
 h1 {
   color: #a2cd73;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 50px;
+}
+
+#home h2 {
+  font-family: 'Balsamiq Sans', cursive;
 }
 
 /* -------------about --------------- */
@@ -60,7 +67,7 @@ h1 {
   justify-content: space-around;
 }
 
-/* -------------about --------------- */
+/* -------------/about --------------- */
 
 /* ------------- portfolio ------------- */
 
@@ -121,7 +128,6 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-
 /* ------------ /contact -------------- */
 /* media queries */
 
@@ -153,7 +159,6 @@ input[type="submit"] {
   #home {
     text-align: left;
   }
-
 
   /* about */
   .about-pic {
