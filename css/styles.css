@@ -4,12 +4,11 @@ body {
   box-sizing: border-box;
 }
 
-/* Jumbotron 1 */
-
-.wrapper-text h1 {
-  color: #a2cd73;
+h1 {
+  text-align: center;
 }
 
+/* Jumbotron 1 */
 
 .circle {
   display: inline-block;
@@ -37,8 +36,15 @@ body {
   background: #a2cd73;
 }
 
-#home {
+#home,
+#portfolio h1,
+.infos p,
+.infos h1 {
   text-align: center;
+}
+
+h1 {
+  color: #a2cd73;
 }
 
 /* -------------about --------------- */
@@ -60,13 +66,13 @@ body {
 
 figure {
   position: relative;
-  width: 250px;
 }
 
 figure img {
   display: block;
-  width: 300px;
-  height: 250px;
+  width: 350px;
+  height: 265px;
+  border-radius: 0.30em;
 }
 
 .overlay {
@@ -74,42 +80,64 @@ figure img {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(31, 41, 52, 0.4);
+  background-color: rgba(31, 41, 52, 0.9);
   overflow: hidden;
   width: 0;
   height: 100%;
   transition: 1s ease;
+  text-align: center;
 }
 
 figure:hover .overlay {
-  width: 300px;
-  height: 100%;
+  width: 350px;
+}
+
+.portfolio-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlay h3 {
+  margin-top: 2em;
+  color: #a2cd73;
+}
+
+/* ------------ /portfolio -------------- */
+/* ------------ contact -------------- */
+
+#contact,
+#about {
+  background: #131f33;
+}
+
+.contact-form input,
+.textarea {
+  background-color: #1f2934;
+  border: none;
+}
+
+input[type="submit"] {
+  cursor: pointer;
 }
 
 
-
-/* ------------ /portfolio -------------- */
-
-
+/* ------------ /contact -------------- */
 /* media queries */
 
 @media (min-width: 768px) {
 
-  /* about */
-  .about-pic {
-    width: 100%;
+  .wrapper-text h1 {
+    text-align: initial;
   }
 
-  .about-pic img {
-    max-width: 55%;
-    margin: 0 auto;
-  }
-
+  /* jumbotron*/
 
   .wrapper-img img {
     vertical-align: middle;
     border-style: none;
     animation: rotate 50s linear infinite;
+    width: 500px;
   }
 
   @keyframes rotate {
@@ -126,16 +154,30 @@ figure:hover .overlay {
     text-align: left;
   }
 
+
+  /* about */
+  .about-pic {
+    width: 100%;
+  }
+
+  .about-pic img {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .infos p {
+    text-align: initial;
+  }
+
+
   /* portfolio */
 
-  figure {
-    position: relative;
-    width: 250px;
-  }
 
   .portfolio-figure {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: center;
   }
 }
