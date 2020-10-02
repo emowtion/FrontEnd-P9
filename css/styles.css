@@ -1,0 +1,141 @@
+body {
+  background: #1f2934;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+/* Jumbotron 1 */
+
+.wrapper-text h1 {
+  color: #a2cd73;
+}
+
+
+.circle {
+  display: inline-block;
+  border-radius: 50%;
+  background: transparent;
+  padding: 0.7em 0.9em;
+  border: 2px solid #a2cd73;
+  transition: background 1s;
+  margin-right: 1.5em;
+}
+
+.fa-twitter,
+.fa-github,
+.fa-slack {
+  color: #fff;
+}
+
+.fa-twitter:hover,
+.fa-github:hover,
+.fa-slack:hover {
+  color: #a2cd73;
+}
+
+.circle:hover {
+  background: #a2cd73;
+}
+
+#home {
+  text-align: center;
+}
+
+/* -------------about --------------- */
+.devicon-git-plain {
+  width: 3em;
+  margin: 2em 1em;
+}
+
+.dev-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* -------------about --------------- */
+
+/* ------------- portfolio ------------- */
+
+figure {
+  position: relative;
+  width: 250px;
+}
+
+figure img {
+  display: block;
+  width: 300px;
+  height: 250px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(31, 41, 52, 0.4);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 1s ease;
+}
+
+figure:hover .overlay {
+  width: 300px;
+  height: 100%;
+}
+
+
+
+/* ------------ /portfolio -------------- */
+
+
+/* media queries */
+
+@media (min-width: 768px) {
+
+  /* about */
+  .about-pic {
+    width: 100%;
+  }
+
+  .about-pic img {
+    max-width: 55%;
+    margin: 0 auto;
+  }
+
+
+  .wrapper-img img {
+    vertical-align: middle;
+    border-style: none;
+    animation: rotate 50s linear infinite;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  #home {
+    text-align: left;
+  }
+
+  /* portfolio */
+
+  figure {
+    position: relative;
+    width: 250px;
+  }
+
+  .portfolio-figure {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
