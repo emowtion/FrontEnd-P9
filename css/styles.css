@@ -9,6 +9,10 @@ h1 {
   text-align: center;
 }
 
+nav {
+  background: #334854;
+}
+
 /* Jumbotron home */
 
 .circle {
@@ -78,7 +82,7 @@ figure {
 figure img {
   display: block;
   width: 350px;
-  height: 265px;
+  height: 268px;
   border-radius: 0.30em;
 }
 
@@ -115,7 +119,7 @@ figure:hover .overlay {
 
 #contact,
 #about {
-  background: #131f33;
+  background: #334854;
 }
 
 .contact-form input,
@@ -126,6 +130,10 @@ figure:hover .overlay {
 
 input[type="submit"] {
   cursor: pointer;
+}
+
+.alert {
+  text-align: center;
 }
 
 /* ------------ /contact -------------- */
