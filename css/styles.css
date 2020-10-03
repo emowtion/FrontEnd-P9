@@ -9,7 +9,9 @@ h1 {
   text-align: center;
 }
 
-nav {
+nav,
+#contact,
+#about {
   background: #334854;
 }
 
@@ -117,10 +119,6 @@ figure:hover .overlay {
 /* ------------ /portfolio -------------- */
 /* ------------ contact -------------- */
 
-#contact,
-#about {
-  background: #334854;
-}
 
 .contact-form input,
 .textarea {
