@@ -70,7 +70,7 @@ h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 /* -------------/about --------------- */
@@ -83,7 +83,8 @@ figure {
 
 figure img {
   display: block;
-  width: 350px;
+  max-width: 100%;
+  width: 335px;
   height: 268px;
   border-radius: 0.30em;
 }
@@ -102,7 +103,7 @@ figure img {
 }
 
 figure:hover .overlay {
-  width: 350px;
+  width: 335px;
 }
 
 .portfolio-figure {
